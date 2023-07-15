@@ -10,6 +10,8 @@ nebeneffekte = data["nebeneffekte"]
 nebeneffekte_weights = data["nebeneffekte_weights"]
 damage_types = data["damage_types"]
 ability_score = data["ability_score"]
+preis = data["preis"]
+
 
 
 def gen_effekt(sel_rarity):
@@ -35,9 +37,10 @@ def gen_effekt(sel_rarity):
             continue
     return "Es wurde ein {0} Öl generiert. \nDer Effekt des Öl's ist: {1}".format(sel_rarity, effekt)
 
-def get_quallity():
+def get_quallity(rarity):
     attk_uses = None
     other_uses = None
+    preis_o = None
     roll = get_ran_num(1,100)
     for e in quality["Attacks"]:
         num = e["Roll"].split("-")
@@ -50,8 +53,15 @@ def get_quallity():
         if int(num[0]) <= roll and int(num[1]) >= roll:
                 other_uses = e["uses"]
                 break
+        
+    # Preis berechnung. Why here? Dont ask...
+    for e in preis[rarity]:
+        num = e["quality"].split("-")
+        if int(num[0]) <= roll and int(num[1]) >= roll:
+                preis_o = e["preis"]
+                break
 
-    return "Attack uses: {0} | Other uses: {1}".format(attk_uses, other_uses)
+    return "Attack uses: {0} | Other uses: {1} \nDer Preis beträgt {2} GP".format(attk_uses, other_uses, preis_o)
 
 def get_nebeneffekt():
     if get_ran_num(1,100) <= 75:
@@ -125,7 +135,7 @@ def ask_ammount():
 
 def gen_item(rarity):
     p_effekt = gen_effekt(rarity)
-    p_quality = get_quallity()
+    p_quality = get_quallity(rarity)
     p_nebeneffekt = get_nebeneffekt()
     p_random_damage_type = get_random_damage_type()
     p_random_ability_score = get_random_ability_score()

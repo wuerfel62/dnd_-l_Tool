@@ -605,6 +605,118 @@
     "intelligence",
     "wisdom",
     "charisma"
-  ]
+  ],
+  "preis": {
+    "Common" :[
+      {
+        "quality": "1-5",
+        "preis": "13"
+      },
+      {
+        "quality": "6-15",
+        "preis": "19"
+      },
+      {
+        "quality": "16-85",
+        "preis": "25"
+      },
+      {
+        "quality": "86-95",
+        "preis": "38"
+      },
+      {
+        "quality": "96-100",
+        "preis": "50"
+      }
+    ],
+    "Uncommon" :[
+      {
+        "quality": "1-5",
+        "preis": "25"
+      },
+      {
+        "quality": "6-15",
+        "preis": "38"
+      },
+      {
+        "quality": "16-85",
+        "preis": "50"
+      },
+      {
+        "quality": "86-95",
+        "preis": "75"
+      },
+      {
+        "quality": "96-100",
+        "preis": "100"
+      }
+    ],
+    "Rare" :[
+      {
+        "quality": "1-5",
+        "preis": "50"
+      },
+      {
+        "quality": "6-15",
+        "preis": "75"
+      },
+      {
+        "quality": "16-85",
+        "preis": "100"
+      },
+      {
+        "quality": "86-95",
+        "preis": "150"
+      },
+      {
+        "quality": "96-100",
+        "preis": "200"
+      }
+    ],
+    "Very rare" :[
+      {
+        "quality": "1-5",
+        "preis": "250"
+      },
+      {
+        "quality": "6-15",
+        "preis": "300"
+      },
+      {
+        "quality": "16-85",
+        "preis": "350"
+      },
+      {
+        "quality": "86-95",
+        "preis": "400"
+      },
+      {
+        "quality": "96-100",
+        "preis": "500"
+      }
+    ],
+    "Legendary" :[
+      {
+        "quality": "1-5",
+        "preis": "450"
+      },
+      {
+        "quality": "6-15",
+        "preis": "550"
+      },
+      {
+        "quality": "16-85",
+        "preis": "700"
+      },
+      {
+        "quality": "86-95",
+        "preis": "800"
+      },
+      {
+        "quality": "96-100",
+        "preis": "900"
+      }
+    ]
+  }
 }
   
