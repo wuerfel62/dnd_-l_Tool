@@ -94,9 +94,9 @@ def get_nebeneffekt():
                     effekt = n["Effekt"]
                     break
 
-        return "Das Öl hat den Nebeneffekt: {0}".format(effekt)
+        return "Das Öl hat den Nebeneffekt: {0} mit dem Schweregrad {1}".format(effekt, schweregrad)
     else:
-        return "Das Öl hat keien Nebeneffekt"
+        return "Das Öl hat keinen Nebeneffekt"
 
 def get_random_damage_type():
     return "Das Öl hat den Random Damage Type {0}".format(random.choice(damage_types))
