@@ -1,0 +1,610 @@
+{
+  "Rarity": {
+    "Common": [
+      {
+        "weights": "1",
+        "Effekt": "+1 damage waffe"
+      },
+      {
+        "weights": "2",
+        "Effekt": "+1 attack roll"
+      },
+      {
+        "weights": "3-5",
+        "Effekt": "1d4 extra damage"
+      },
+      {
+        "weights": "6",
+        "Effekt": "+5 ft movement"
+      },
+      {
+        "weights": "7-9",
+        "Effekt": "+1 auf saving throw (random type)"
+      },
+      {
+        "weights": "10-12",
+        "Effekt": "+profciency auf random skill check"
+      }
+    ],
+    "Uncommon": [
+      {
+        "weights": "1",
+        "Effekt": "+1 shield"
+      },
+      {
+        "weights": "2-4",
+        "Effekt": "1d6 extra damage (random damage type)"
+      },
+      {
+        "weights": "5",
+        "Effekt": "+10 ft movement"
+      },
+      {
+        "weights": "6",
+        "Effekt": "+1 spell dc"
+      },
+      {
+        "weights": "7",
+        "Effekt": "+1 spell attack"
+      },
+      {
+        "weights": "8-9",
+        "Effekt": "+2 auf saving throw (random type)"
+      }
+    ],
+    "Rare": [
+      {
+        "weights": "1",
+        "Effekt": "+1 armor"
+      },
+      {
+        "weights": "2",
+        "Effekt": "+2 shield"
+      },
+      {
+        "weights": "3-5",
+        "Effekt": "2d6 extra damage (random damage type)"
+      },
+      {
+        "weights": "6",
+        "Effekt": "disadvantage von attack rolls auf dich, für 1 turn deaktiviert wenn u getroffen wirst"
+      },
+      {
+        "weights": "7",
+        "Effekt": "+15 ft movement"
+      },
+      {
+        "weights": "8",
+        "Effekt": "+1/+1 Waffe"
+      }
+    ],
+    "Very rare": [
+      {
+        "weights": "1",
+        "Effekt": "+2 armor"
+      },
+      {
+        "weights": "2",
+        "Effekt": "+3 shield"
+      },
+      {
+        "weights": "3-5",
+        "Effekt": "3d6 extra damage (random damage type)"
+      },
+      {
+        "weights": "6",
+        "Effekt": "Crit hit schon bei 19"
+      },
+      {
+        "weights": "7",
+        "Effekt": "+20 ft movement"
+      },
+      {
+        "weights": "9",
+        "Effekt": "+2 spell attacks/spell saves"
+      }
+    ],
+    "Legendary": [
+      {
+        "weights": "1",
+        "Effekt": "+3 armor"
+      },
+      {
+        "weights": "2",
+        "Effekt": "+30 ft movement"
+      },
+      {
+        "weights": "3-4",
+        "Effekt": "advantage auf alle attack rolls"
+      },
+      {
+        "weights": "5",
+        "Effekt": "+3 spell attacks/spell saves"
+      },
+      {
+        "weights": "6",
+        "Effekt": "+3/+3 Waffe"
+      },
+      {
+        "weights": "7-9",
+        "Effekt": "advantage auf saving throws"
+      }
+    ]
+  },
+  "quality": {
+    "Attacks": [
+      {
+        "Roll": "1-5",
+        "uses": 10,
+        "GP_Preis": "50% GP Preis"
+      },
+      {
+        "Roll": "6-15",
+        "uses": 20,
+        "GP_Preis": "75% GP Preis"
+      },
+      {
+        "Roll": "16-85",
+        "uses": 30,
+        "GP_Preis": "0% GP Preis"
+      },
+      {
+        "Roll": "86-95",
+        "uses": 40,
+        "GP_Preis": "150% GP Preis"
+      },
+      {
+        "Roll": "96-100",
+        "uses": 50,
+        "GP_Preis": "200% GP Preis"
+      }
+    ],
+    "Other": [
+      {
+        "Roll": "1-5",
+        "uses": 5,
+        "GP_Preis": "50% GP Preis"
+      },
+      {
+        "Roll": "6-15",
+        "uses": 10,
+        "GP_Preis": "75% GP Preis"
+      },
+      {
+        "Roll": "16-85",
+        "uses": 15,
+        "GP_Preis": "0% GP Preis"
+      },
+      {
+        "Roll": "86-95",
+        "uses": 20,
+        "GP_Preis": "150% GP Preis"
+      },
+      {
+        "Roll": "96-100",
+        "uses": 25,
+        "GP_Preis": "200% GP Preis"
+      }
+    ]
+  },
+  "nebeneffekte": {
+    "sehr_schlecht" : [
+      {
+        "Roll": 1,
+        "Effekt": "lässt dich für hat bei jedem use eine 5% Chance dich für 1 turn zu erblinden"
+      },
+      {
+        "Roll": 2,
+        "Effekt": "gibt 1dN damage bei jedem use, roll den damage type (N=10% der maxHP abgerundet)"
+      },
+      {
+        "Roll": 3,
+        "Effekt": "während das öl anhält Disadvantage auf ability checks"
+      },
+      {
+        "Roll": 4,
+        "Effekt": "während das öl anhält Disadvantage auf saving throw"
+      },
+      {
+        "Roll": 5,
+        "Effekt": "während das öl anhält Disadvantage bei attack rolls"
+      },
+      {
+        "Roll": 6,
+        "Effekt": "50% mehr damage von jeder Magie die dich erwischt (nach berechnung von allem)"
+      },
+      {
+        "Roll": 7,
+        "Effekt": "Bei jedem use eines class features 5% chance dass dieses nicht funktioniert"
+      },
+      {
+        "Roll": 8,
+        "Effekt": "bei jedem use 50% chance auf double damage für 1 turn"
+      },
+      {
+        "Roll": 9,
+        "Effekt": "50 % chance auf eine zeitlschleife nach jedem use, wenn möglich (z.b. noch spellslots verfügbar) wiederholst die aktionen aus deiner vorherigen turn (ja, eventuell bist du in einer schleife gefangen bis die uses aufgebraucht sind) (nur die aktionen, alles andere verläuft normal: useszahl, spellslots, hp etc., die targets bleiben aber gleich, selbst wenn sie tot sind)"
+      },
+      {
+        "Roll": 10,
+        "Effekt": "bei jedem use 2% chance mit 8d6 random damage type zu explodieren (10 ft radius), DC16 half damage dex save"
+      },
+      {
+        "Roll": 11,
+        "Effekt": "während das öl anhält -25% max HP"
+      },
+      {
+        "Roll": 12,
+        "Effekt": "bei jedem use 10% chance auf short term madness (dmg/roll20 compendium)"
+      }
+    ],
+    "schlecht": [
+      {
+        "Roll": 1,
+        "Effekt": "Öl hält nur halb so lange an"
+      },
+      {
+        "Roll": 2,
+        "Effekt": "hat das Item sehr glitschig gemacht, 5% Chance das Item zu verlieren bei jedem use"
+      },
+      {
+        "Roll": 3,
+        "Effekt": "Disadvantage auf Stealth checks weil das Öl leuchtet/klimpert/denk dir was aus"
+      },
+      {
+        "Roll": 4,
+        "Effekt": "Bei jedem use 25% Chance auf 1 min nur Kauderwelsch reden"
+      },
+      {
+        "Roll": 5,
+        "Effekt": "doppelter damage von einem damage type, roll den damage type"
+      },
+      {
+        "Roll": 6,
+        "Effekt": "Disadvantage auf Charisma checks bei der Interaktion mit anderen Leuten weil immer ein unpassender Hut auf deinem Kopf erscheint"
+      },
+      {
+        "Roll": 7,
+        "Effekt": "macht das Item sehr schwer, 5 ft weniger movement"
+      },
+      {
+        "Roll": 8,
+        "Effekt": "du zitterst unkontrolliert, Disadvantage auf Feinmotorigkeit"
+      },
+      {
+        "Roll": 9,
+        "Effekt": "bei jedem use 10% chance Teleport zu einem zufälligen Ort in 30 ft (quadrat also am boden) reichweite (roll 1d36 von oben links weg nach rechts und unten durnummeriert)"
+      },
+      {
+        "Roll": 10,
+        "Effekt": "Confusion spell genau auf dich, spell dc 15"
+      },
+      {
+        "Roll": 11,
+        "Effekt": "Frightened vor der nächsten (Zeit) hostile creature die du siehst, wenn du gerade mehrere siehst dann ist es die nächste (Entfernung)"
+      },
+      {
+        "Roll": 12,
+        "Effekt": "charmed durch die nächste (zeit) hostile creature die du siehst, wenn du gerade mehrere siehst dann ist es die nächste (Entfernung)"
+      },
+      {
+        "Roll": 13,
+        "Effekt": "während das öl anhält ist alles für dich difficult terrain"
+      },
+      {
+        "Roll": 14,
+        "Effekt": "bei jedem use 1 turn lang kein healing möglich"
+      },
+      {
+        "Roll": 15,
+        "Effekt": "25% extra damage von einem zufälligen damage type"
+      },
+      {
+        "Roll": 16,
+        "Effekt": "während das öl anhält ziehst du die aggro der gegner auf dich, jeder gegner hat ne 25% chance nur dich zu targeten und andere leute zu ignorieren"
+      },
+      {
+        "Roll": 17,
+        "Effekt": "Nach jedem use 10% chance auf halben schaden den man dealt für 1 turn"
+      },
+      {
+        "Roll": 18,
+        "Effekt": "Nach jedem use 5% chance dass die Runde sofort beendet wird"
+      },
+      {
+        "Roll": 19,
+        "Effekt": "Disadvantage auf charisma saves"
+      },
+      {
+        "Roll": 20,
+        "Effekt": "Disadvantage auf dex saves"
+      },
+      {
+        "Roll": 21,
+        "Effekt": "Disadvantage auf strength saves"
+      },
+      {
+        "Roll": 22,
+        "Effekt": "Disadvantage auf wisdom saves"
+      },
+      {
+        "Roll": 23,
+        "Effekt": "Disadvantage auf int saves"
+      },
+      {
+        "Roll": 24,
+        "Effekt": "Disadvantage auf con saves"
+      }
+    ],
+    "neutral": [
+      {
+        "Roll": "1-5",
+        "Effekt": "kurzer wild magic puls, roll den wild magic surge table vom sorcerer"
+      },
+      {
+        "Roll": 6,
+        "Effekt": "bei auftragen wirst du 1 Jahr älter/jünger (minimum 1 Jahr)"
+      },
+      {
+        "Roll": 7,
+        "Effekt": "während das öl anhält kannst du nach Belieben die Farbe des Items ändern"
+      },
+      {
+        "Roll": 8,
+        "Effekt": "Das Öl lässt das Item nach einem positiven Geruch riechen (z.B. nach Deez)"
+      },
+      {
+        "Roll": 9,
+        "Effekt": "Das Öl lässt das Item sanft leuchten"
+      },
+      {
+        "Roll": 10,
+        "Effekt": "Das Öl poliert auch gleichzeitig das Item"
+      },
+      {
+        "Roll": 11,
+        "Effekt": "Das Öl verziert das Item mit einem wunderschönen Muster, was nach Ablaufen des Öls wieder verschwindet"
+      },
+      {
+        "Roll": 12,
+        "Effekt": "Beim Berühren des Items kribbelt deine Haut"
+      },
+      {
+        "Roll": 13,
+        "Effekt": "Die Farben des Items werden saturierter"
+      },
+      {
+        "Roll": 14,
+        "Effekt": "Das Öl spielt sehr leise Spieluhrenmusik"
+      },
+      {
+        "Roll": 15,
+        "Effekt": "Das Item fühlt sich robuster an als zuvor"
+      },
+      {
+        "Roll": 16,
+        "Effekt": "Das Item surrt sanft"
+      },
+      {
+        "Roll": 17,
+        "Effekt": "Das Item bekommt einen vanilleeisartigen Geschmack"
+      },
+      {
+        "Roll": 18,
+        "Effekt": "Das Item ändert im Licht seine Farbe"
+      },
+      {
+        "Roll": 19,
+        "Effekt": "Das Item sprüht sanft Wind aus"
+      },
+      {
+        "Roll": 20,
+        "Effekt": "Das Item ist jetzt eine Stimmgabel, wenn es angeschlagen wird"
+      },
+      {
+        "Roll": 21,
+        "Effekt": "Das Item fühlt sich lauwarm an"
+      },
+      {
+        "Roll": 22,
+        "Effekt": "Das Item sprüht sanften Nebel aus"
+      },
+      {
+        "Roll": 23,
+        "Effekt": "Das Item ist leicht elektrisch geladen"
+      },
+      {
+        "Roll": 24,
+        "Effekt": "Das Item fühlt sich angenehm kühl an"
+      },
+      {
+        "Roll": 25,
+        "Effekt": "Das Item hinterlässt beim Bewegen eine leuchtende Spur in der Luft (Farbe zufällig)"
+      },
+      {
+        "Roll": 26,
+        "Effekt": "Das Item knistert vor sich hin"
+      },
+      {
+        "Roll": 27,
+        "Effekt": "Das Item hat einen Art Hitze schimmer um sich (nicht heiß, nur so verschwommen)"
+      },
+      {
+        "Roll": 28,
+        "Effekt": "Das Item gibt leise Meeresrauschen von sich ab"
+      },
+      {
+        "Roll": 29,
+        "Effekt": "Das Item gibt leise Kirchenglocken Klingeln von sich ab"
+      },
+      {
+        "Roll": 30,
+        "Effekt": "Die Oberfläche des Items fühlt sich samtweich an"
+      },
+      {
+        "Roll": 31,
+        "Effekt": "Das Item springt wie ein Flummi (wenn man nicht damit gerade jemanden schlägt)"
+      },
+      {
+        "Roll": 32,
+        "Effekt": "Das Item ist leicht durchsichtig"
+      },
+      {
+        "Roll": 33,
+        "Effekt": "Das Item sieht irgendwie mehr 2D aus als zuvor"
+      },
+      {
+        "Roll": 34,
+        "Effekt": "Das Item hat leicht alkoholisierende Effekte"
+      },
+      {
+        "Roll": 35,
+        "Effekt": "Das Item kann nun benutzt werden, um Feuer anzuzünden"
+      },
+      {
+        "Roll": 36,
+        "Effekt": "Beim Auftragen bekommst du Hunger auf ein bestimmtes Gericht"
+      }
+    ],
+    "gut": [
+      {
+        "Roll": 1,
+        "Effekt": "bei jedem use 50% chance teleport zu einem punkt in 60 ft reichweite, spieler darf aussuchen"
+      },
+      {
+        "Roll": 2,
+        "Effekt": "advantage auf int saves"
+      },
+      {
+        "Roll": 3,
+        "Effekt": "advantage auf wisdom saves"
+      },
+      {
+        "Roll": 4,
+        "Effekt": "advantage auf dex saves"
+      },
+      {
+        "Roll": 5,
+        "Effekt": "advantage auf strength saves"
+      },
+      {
+        "Roll": 6,
+        "Effekt": "advantage auf con saves"
+      },
+      {
+        "Roll": 7,
+        "Effekt": "advantage auf charisma saves"
+      },
+      {
+        "Roll": 8,
+        "Effekt": "bei jedem use 1dN+2 (N=10% der max HP, abgerundet) temp hp"
+      },
+      {
+        "Roll": 9,
+        "Effekt": "Bei jedem use healing um die Hälfte deines levels abgerundet (mind. 1)"
+      },
+      {
+        "Roll": 10,
+        "Effekt": "resistance gegen random damage type"
+      },
+      {
+        "Roll": 11,
+        "Effekt": "bei jedem use kann einer hostile creature 1dLevel+25%Level(abgerundet, mind. 1) random damage type zugefügt werden"
+      },
+      {
+        "Roll": 12,
+        "Effekt": "Öl hält doppelt solange an"
+      }
+    ],
+    "sehr_gut":[
+      {
+        "Roll": 1,
+        "Effekt": "+25% max HP für die Dauer des Öls"
+      },
+      {
+        "Roll": 2,
+        "Effekt": "1dN+2 healing bei jedem use (N = 10% der max HP abgerundet)"
+      },
+      {
+        "Roll": 3,
+        "Effekt": "Bei jedem use 5% chance ein zufälliges common magic item aus einem Portal gedroppt zu bekommen (auch consumables)"
+      },
+      {
+        "Roll": 4,
+        "Effekt": "während das Öl anhält advantage auf ability checks"
+      },
+      {
+        "Roll": 5,
+        "Effekt": "während das Öl anhält advantage auf attack rolls"
+      },
+      {
+        "Roll": 6,
+        "Effekt": "während das Öl anhält advantage auf saving throws"
+      },
+      {
+        "Roll": 7,
+        "Effekt": "die nächste (zeit) hostile creature, die dich sieht, ist charmed durch dich. Wenn mehrere dich gerade sehen, ist es die nächste (Entfernung)"
+      },
+      {
+        "Roll": 8,
+        "Effekt": "bei jedem use 50% chance auf invisibility bis zum Ende deines nächsten Zuges"
+      },
+      {
+        "Roll": 9,
+        "Effekt": "bei jedem use für 1 turn flying speed oder movement speed"
+      },
+      {
+        "Roll": 10,
+        "Effekt": "Bei damage kriegen 50% chance, ihn zu halbieren"
+      }
+    ]
+  },
+  "nebeneffekte_weights": {
+    "weights":[
+      {
+        "weights" : "1-5",
+        "name" : "sehr_schlecht"
+      },
+      {
+        "weights" : "6-20",
+        "name" : "schlecht"
+      },
+      {
+        "weights" : "21-80",
+        "name" : "neutral"
+      },
+      {
+        "weights" : "81-95",
+        "name" : "gut"
+      },
+      {
+        "weights" : "96-100",
+        "name" : "sehr_gut"
+      }
+    ]
+  },
+  "damage_types": [
+    "acid",
+    "bludgeoning",
+    "cold",
+    "fire",
+    "force",
+    "lightning",
+    "necrotic",
+    "piercing",
+    "poison",
+    "psychic",
+    "radiant",
+    "slashing",
+    "thunder"
+  ],
+  "ability_score": [
+    "strength",
+    "dexterity",
+    "constitution",
+    "intelligence",
+    "wisdom",
+    "charisma"
+  ]
+}
+  
