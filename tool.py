@@ -37,7 +37,7 @@ def gen_effekt(sel_rarity):
             continue
     return "Es wurde ein {0} Öl generiert. \nDer Effekt des Öl's ist: {1}".format(sel_rarity, effekt)
 
-def get_quallity(rarity):
+def get_quality(rarity):
     attk_uses = None
     other_uses = None
     preis_o = None
@@ -135,7 +135,7 @@ def ask_ammount():
 
 def gen_item(rarity):
     p_effekt = gen_effekt(rarity)
-    p_quality = get_quallity(rarity)
+    p_quality = get_quality(rarity)
     p_nebeneffekt = get_nebeneffekt()
     p_random_damage_type = get_random_damage_type()
     p_random_ability_score = get_random_ability_score()
